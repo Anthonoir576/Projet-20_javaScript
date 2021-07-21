@@ -46,7 +46,7 @@ function getValues() {
 
     if (!storageContent) {
 
-        list.innerHTML = `<li>Cliquez sur un todo pour le supprimer</li>`
+        list.innerHTML = `<li>TUTORIEL :</li><li>Cliquez sur la barre pour ajouter un todo puis la touche ENTRER</li><li>Cliquez sur un todo pour le valider</li><li>Cliquez une deuxième fois pour le supprimer</li>`
 
     } else {
 
