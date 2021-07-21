@@ -30,6 +30,7 @@ body .container {
 }
 html h1,
 body h1 {
+  color: #555;
   text-transform: uppercase;
   letter-spacing: 0.4rem;
   font-size: 2.35rem;
