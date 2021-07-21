@@ -1,14 +1,117 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  outline: none;
+  border: none;
 }
 
 html,
 body {
   overflow-x: hidden;
-  font-family: "Josefin Sans", "Lato", sans-serif;
-  background: #444;
+  font-family: "Lato", "Josefin Sans", sans-serif;
+  background: linear-gradient(125deg, #fd4a1d 0%, #fcb045 100%);
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+html .container,
+body .container {
+  width: 50%;
+  margin: 5rem auto;
+  text-align: center;
+  background: linear-gradient(125deg, #5effc9 0%, #45c2fc 100%);
+  padding: 2rem 1rem;
+  border-radius: 7px;
+  box-shadow: 0px 10px 30px 0px #3f3f3f;
+}
+html h1,
+body h1 {
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  font-size: 2.35rem;
+  text-shadow: -1px 3px 7px #fd4a1d;
+  font-weight: 900;
+}
+html form,
+body form {
+  margin: 2rem 0;
+}
+html form input,
+body form input {
+  width: 90%;
+  height: 35px;
+  border-radius: 10px;
+  padding: 0 1rem;
+  border: 2px solid #fd4a1d;
+  font-size: 1rem;
+  background: linear-gradient(125deg, #fd4a1d 0%, #fcb045 100%);
+  color: #5effc9;
+  box-shadow: 0px 2px 10px 0px #3f3f3f;
+  transition: 0.7s;
+}
+html form input::placeholder,
+body form input::placeholder {
+  color: #5effc9;
+}
+html form input:focus,
+body form input:focus {
+  border: 2px solid #ffee00;
+  box-shadow: 0px 2px 10px 0px #ffee00;
+}
+html ul,
+body ul {
+  text-align: left;
+}
+html ul li,
+body ul li {
+  list-style: none;
+  padding: 0.7rem;
+  position: relative;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+html ul li:before,
+body ul li:before {
+  content: "✽";
+  padding: 0.6rem;
+  font-size: 1.3rem;
+  color: #fd4a1d;
+}
+html ul li:after,
+body ul li:after {
+  opacity: 0;
+}
+html ul li:hover:after,
+body ul li:hover:after {
+  content: " (terminé)";
+  opacity: 0;
+  font-size: 1.1rem;
+  color: #fd4a1d;
+  font-style: italic;
+  animation: pseudoClassAnim 1s forwards;
+}
+html ul .checked:before,
+body ul .checked:before {
+  content: "✔";
+  padding: 10px 10px;
+  font-size: 1.1rem;
+  color: #fd4a1d;
+}
+html ul .checked:hover:after,
+body ul .checked:hover:after {
+  content: " (supprimer)";
+  font-size: 1.1rem;
+  color: #fd4a1d;
+  opacity: 0;
+}
+@keyframes pseudoClassAnim {
+  to {
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
