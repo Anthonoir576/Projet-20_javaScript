@@ -28,7 +28,7 @@ body {
 
     & .container {
         
-        width: 50%;
+        width: 80%;
         margin: 5rem auto;
         text-align: center;
         background: linear-gradient(125deg, #5effc9 0%, #45c2fc 100%);
@@ -86,7 +86,7 @@ body {
 
     & ul {
 
-        text-align: left;
+        text-align: start;
 
         & li {
 
@@ -113,7 +113,7 @@ body {
 
             &:hover:after {
 
-                content: " (terminé)";
+                content: " ( Avez-vous terminé ? )";
                 opacity: 0;
                 font-size: 1.1rem;
                 color: #fd4a1d;
@@ -135,7 +135,7 @@ body {
 
         & .checked:hover:after {
 
-            content: " (supprimer)";
+            content: " ( Voulez-vous supprimé ? )";
             font-size: 1.1rem;
             color: #fd4a1d;
             opacity: 0;
